@@ -1,0 +1,84 @@
+/* Variables para una fácil personalización */
+:root {
+    --dark-blue: #0a0a1a;
+    --medium-blue: #1c2e4a;
+    --neon-accent: #00ffff; /* Cian brillante */
+    --text-color: #ffffff;
+    --font-family-modern: 'Orbitron', sans-serif;
+}
+
+body {
+    /* Resetea el margen y usa el modelo de caja flexible para centrar */
+    margin: 0;
+    font-family: var(--font-family-modern);
+    overflow: hidden; /* Evita que la animación cause barras de desplazamiento */
+}
+
+/* Contenedor del fondo y centrado del contenido */
+.background-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    position: relative;
+    
+    /* Configuración del degradado */
+    background: linear-gradient(
+        -45deg, 
+        var(--dark-blue), 
+        var(--medium-blue), 
+        var(--dark-blue), 
+        var(--medium-blue)
+    );
+    
+    /* Define el tamaño del degradado (para que se pueda mover) */
+    background-size: 400% 400%;
+    
+    /* Aplica la animación */
+    animation: gradientShift 15s ease infinite;
+}
+
+/* Animación del degradado */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%; /* Inicio en la esquina superior izquierda */
+    }
+    50% {
+        background-position: 100% 50%; /* Mitad del ciclo en la esquina inferior derecha */
+    }
+    100% {
+        background-position: 0% 50%; /* Regresa al inicio */
+    }
+}
+
+/* Estilo del texto centrado */
+.centered-text {
+    font-size: 6vw; /* Tamaño de fuente relativo a la ventana (ajuste dinámico) */
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5em; /* Espaciado entre letras */
+    padding-left: 0.5em; /* Compensar el espaciado para que el texto esté centrado */
+    
+    /* Efecto Neón (Resplandor) */
+    text-shadow: 
+        0 0 10px var(--neon-accent),
+        0 0 20px var(--neon-accent),
+        0 0 40px var(--neon-accent),
+        0 0 80px rgba(0, 255, 255, 0.7);
+        
+    /* Animación sutil de respiración/pulso del neón */
+    animation: neonPulse 3s infinite alternate;
+}
+
+/* Animación del Resplandor Neón */
+@keyframes neonPulse {
+    0% {
+        opacity: 0.8;
+        text-shadow: 0 0 10px var(--neon-accent), 0 0 20px var(--neon-accent);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 15px var(--neon-accent), 0 0 30px var(--neon-accent), 0 0 60px rgba(0, 255, 255, 0.8);
+    }
+}
