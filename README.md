@@ -119,9 +119,6 @@ docker-compose build     # Reconstruir imágenes
 
 ## ⭐ Mejoras recomendadas
 
-- Añadir base de datos (PostgreSQL o SQLite)  
-- Implementar variables de entorno (`.env`)  
-- Hacer el backend más complejo  
 - Habilitar HTTPS con Certbot  
 - Agregar CI/CD con GitHub Actions  
 - Desplegar en un VPS o Azure Container Apps  
