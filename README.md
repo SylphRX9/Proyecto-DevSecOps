@@ -73,7 +73,7 @@ Gracias a Docker Compose, todos los servicios se comunican por nombre interno.
 
 1. Clonar el repositorio:
 ```bash
-git clone <TU_REPO>
+git clone https://github.com/SylphRX9/Proyecto-DevSecOps.git
 cd stack
 ```
 
