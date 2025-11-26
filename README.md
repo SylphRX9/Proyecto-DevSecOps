@@ -1,4 +1,4 @@
-# 🚀 Proyecto: Stack Frontend + Backend + Reverse Proxy (Docker Compose)
+# 🚀 HOLA DIIFZ Proyecto: Stack Frontend + Backend + Reverse Proxy (Docker Compose)
 
 Este proyecto demuestra cómo crear un stack sencillo compuesto por tres servicios en contenedores Docker:
 
