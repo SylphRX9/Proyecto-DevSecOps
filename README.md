@@ -17,10 +17,11 @@ Este proyecto es ideal para practicar Docker en nivel **básico + intermedio**.
 /stack
   ├── frontend/
   │     ├── index.html
-  │     └── Dockerfile
+  │     └── style.css
   ├── backend/
-  │     ├── app.py
-  │     ├── requirements.txt
+  │     ├── .dockerignore
+  │     ├── Servidor.py
+  │     ├── requisitos.txt
   │     └── Dockerfile
   ├── nginx/
   │     └── nginx.conf
@@ -74,7 +75,7 @@ Gracias a Docker Compose, todos los servicios se comunican por nombre interno.
 1. Clonar el repositorio:
 ```bash
 git clone https://github.com/SylphRX9/Proyecto-DevSecOps.git
-cd stack
+cd Proyecto-DevSecOps
 ```
 
 2. Construir y levantar el stack:
