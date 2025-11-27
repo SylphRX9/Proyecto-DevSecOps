@@ -57,15 +57,3 @@ body {
     font-size: 12vw; /* Tamaño de fuente relativo a la ventana (ajuste dinámico) */
     color: var(--text-color);
 }
-
-/* Animación del Resplandor Neón */
-@keyframes neonPulse {
-    0% {
-        opacity: 0.8;
-        text-shadow: 0 0 10px var(--neon-accent), 0 0 20px var(--neon-accent);
-    }
-    100% {
-        opacity: 1;
-        text-shadow: 0 0 15px var(--neon-accent), 0 0 30px var(--neon-accent), 0 0 60px rgba(0, 255, 255, 0.8);
-    }
-}
