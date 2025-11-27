@@ -54,21 +54,8 @@ body {
 
 /* Estilo del texto centrado */
 .centered-text {
-    font-size: 6vw; /* Tamaño de fuente relativo a la ventana (ajuste dinámico) */
+    font-size: 12vw; /* Tamaño de fuente relativo a la ventana (ajuste dinámico) */
     color: var(--text-color);
-    text-transform: uppercase;
-    letter-spacing: 0.5em; /* Espaciado entre letras */
-    padding-left: 0.5em; /* Compensar el espaciado para que el texto esté centrado */
-    
-    /* Efecto Neón (Resplandor) */
-    text-shadow: 
-        0 0 10px var(--neon-accent),
-        0 0 20px var(--neon-accent),
-        0 0 40px var(--neon-accent),
-        0 0 80px rgba(0, 255, 255, 0.7);
-        
-    /* Animación sutil de respiración/pulso del neón */
-    animation: neonPulse 3s infinite alternate;
 }
 
 /* Animación del Resplandor Neón */
